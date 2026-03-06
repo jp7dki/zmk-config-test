@@ -1,6 +1,4 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 
 / {
     chosen {
@@ -17,15 +15,6 @@
 
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-direct";
-        label = "KSCAN";
         input-gpios = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    };
-
-    // キーマップもOverlayの中に直接定義してしまいます
-    keymap {
-        compatible = "zmk,keymap";
-        default_layer {
-            bindings = <&kp A>;
-        };
     };
 };
