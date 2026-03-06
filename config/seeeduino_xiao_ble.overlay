@@ -15,6 +15,7 @@
 
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-direct";
-        input-gpios = <&xiao_d 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        // エイリアスを使わず、D0ピンの物理ポート(P0.02)を直接指定します
+        input-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
