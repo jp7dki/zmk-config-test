@@ -1,5 +1,5 @@
 include:
-	- board: seeeduino_xiao_ble
-	  shield: onekey
-	- board: seeduino_xiao_ble
-	  shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: onekey
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
