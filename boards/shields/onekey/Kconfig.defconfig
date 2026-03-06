@@ -1,6 +1,6 @@
 if SHIELD_ONEKEY
 
 config ZMK_KEYBOARD_NAME
-	default "OneKey"
+    default "OneKey"
 
 endif
